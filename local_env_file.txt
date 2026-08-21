@@ -8,3 +8,6 @@ New-Item .env -ItemType File
 notepad .env
 OPENAI_API_BASE="http://127.0.0.1:8090/v1"
 OPENAI_API_KEY="sk-no-key-required"
+
+-- To run webapp
+uvicorn webapp.main:app --reload
