@@ -1,0 +1,10 @@
+In windows powershell 
+py -3.11 -m venv .venv  -- this is to create virtual environment with specific python version installed
+.venv\Scripts\activate   -- To strart above created virtual environment
+
+-- Create the .env file as below after above steps
+
+New-Item .env -ItemType File
+notepad .env
+OPENAI_API_BASE="http://127.0.0.1:8090/v1"
+OPENAI_API_KEY="sk-no-key-required"
